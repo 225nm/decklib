@@ -1,14 +1,12 @@
 export class Shuffler {
-
   // Shuffles the deck using the Fisher-Yates algorithm and returns a new shuffled deck
- unShuffledDeck() {
-    const cards = [];
-    for (const suit of SUITS) {
-      for (const rank of RANKS) {
-        cards.push(new Card(suit, rank));
-      }
+  shuffle(deck) {
+    const shuffledDeck = [...deck];
+    for (let i = shuffledDeck.length - 1; i > 0; i--) {
+      const j = (Math.floor(Math.random() * (i + 1))[
+        (shuffledDeck[i], shuffledDeck[j])
+      ] = [shuffledDeck[j], shuffledDeck[i]]);
     }
-    return cards;
+    return shuffledDeck;
   }
-
 }
