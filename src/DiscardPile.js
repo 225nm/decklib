@@ -25,7 +25,7 @@ export class DiscardPile {
     }
     return this.#cards[this.#cards.length - 1]
   }
-
+// Returns the amount of cards in discard pile
   getPileSize() {
     return this.#cards.length
   }

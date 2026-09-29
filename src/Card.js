@@ -17,6 +17,7 @@ export const RANKS = [
   "A",
 ];
 
+// Ace is considered to have a value of 14
 const RANK_WEIGHTS = {
   2: 2,
   3: 3,

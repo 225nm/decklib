@@ -12,7 +12,7 @@ export class Deck {
   shuffle() {
     this.#cards = this.#shuffler.shuffle(this.#cards);
   }
-
+  // A standard deck consists of 52 shuffled cards
   standardDeck() {
     const cards = this.unShuffledDeck();
     return this.#shuffler.shuffle(cards);
