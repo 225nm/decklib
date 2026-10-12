@@ -5,7 +5,7 @@ DeckLib is an ES module for creating and manipulating playing cards, decks, hand
 ## Installation
 
 ```sh
-npm install github:eb225nm/decklib
+npm install github:225nm/decklib
 ```
 
 Import the classes you need from the package:
