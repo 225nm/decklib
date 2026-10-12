@@ -36,7 +36,7 @@ console.log(discardPile.getPileSize()); // Gets the discard pile size
 ```
 ### Output
 ```
-[ 2 of Spades, 4 of Hearts, 6 of Clubs, 7 of Diamonds, 7 of Clubs ] // Not that this output will be randomized as the deck is shuffled
+[ 2 of Spades, 4 of Hearts, 6 of Clubs, 7 of Diamonds, 7 of Clubs ] // Note that this output will be randomized as the deck is shuffled
 47
 1
 ```
