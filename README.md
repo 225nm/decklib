@@ -77,6 +77,7 @@ Cards also use Node.js custom inspection, so logging a card displays its readabl
 | `getCards()` | A shallow copy of the current card array. |
 | `getTopCard()` | The top card without removing it. Throws an `Error` if the deck is empty. |
 | `reshuffleDiscardPile(discardPile)` | Moves every card from a non-empty discard pile into the deck and shuffles. Throws an `Error` if the pile is empty. |
+| `addCard(card)` | Adds the card on top of the deck, so it is the next card drawn. |
 
 The top card is the last card in the deck's internal array, so drawing removes from that end.
 

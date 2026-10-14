@@ -71,7 +71,13 @@ export class Deck {
     }
     return this.#cards[this.#cards.length - 1];
   }
-
+  // The added card will be on top of the deck
+  addCard(card) {
+    if (!(card instanceof Card)) {
+      throw new TypeError("Argument must be an instance of Card.");
+    }
+    this.#cards.push(card);
+  }
   reshuffleDiscardPile(discardPile) {
     if (discardPile.getPileSize() === 0) {
       throw new Error("Discard pile is empty. Cannot reshuffle into the deck.");
