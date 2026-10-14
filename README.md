@@ -21,7 +21,7 @@ import { Card, Deck, DiscardPile, Hand, Shuffler } from "DeckLib";
 ```js
 import { Deck, DiscardPile, Hand } from "DeckLib";
 
-const deck = new Deck();       // shuffled standard 52-card deck
+const deck = new Deck();       // Shuffled standard 52-card deck
 const discardPile = new DiscardPile(); // Discard pile for played cards
 const hand = new Hand(deck.drawMultiple(5)); // A player hand with 5 drawn cards
 

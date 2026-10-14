@@ -52,6 +52,7 @@ export class Deck {
     return drawnCards;
   }
 
+  // Size refers to the amount of cards
   remainingDeckSize() {
     return this.#cards.length;
   }
