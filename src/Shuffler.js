@@ -1,5 +1,9 @@
 export class Shuffler {
-  // Shuffles the deck using the Fisher-Yates algorithm and returns a new shuffled deck
+  /**
+   * Returns a shuffled copy of the supplied deck using the Fisher-Yates algorithm.
+   * @param {Card[]} deck The cards to shuffle.
+   * @returns {Card[]} A new shuffled array.
+   */
   shuffle(deck) {
     const shuffledDeck = [...deck];
     for (let i = shuffledDeck.length - 1; i > 0; i--) {

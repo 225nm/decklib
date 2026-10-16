@@ -59,34 +59,59 @@ export class Card {
     this.#rank = rank;
   }
 
+  /**
+   * Returns the card's suit.
+   * @returns {string} The suit name.
+   */
   getSuit() {
     return this.#suit;
   }
 
+  /**
+   * Returns the card's rank.
+   * @returns {string} The rank name.
+   */
   getRank() {
     return this.#rank;
   }
 
+  /**
+   * Returns the card's numeric rank value, where Ace is highest.
+   * @returns {number} The rank weight.
+   */
   getRankWeight() {
     return RANK_WEIGHTS[this.#rank];
   }
 
+  /**
+   * Returns the card's suit ordering value.
+   * @returns {number} The suit weight.
+   */
   getSuitWeight() {
     return SUIT_WEIGHTS[this.#suit];
   }
 
+  /**
+   * Returns the color of the card's suit.
+   * @returns {"Red"|"Black"} The suit color.
+   */
   getSuitColor() {
     return SUIT_COLORS[this.#suit];
   }
 
+  /**
+   * Returns a readable description of the card.
+   * @returns {string} A string like "K of Spades".
+   */
   toString() {
     return `${this.#rank} of ${this.#suit}`;
   }
 
   /**
    * Compares this card to another Card by rank weight, using suit weight as a tie-breaker.
-   * @param {Card} otherCard
-   * @returns {number} Negative if this < other, positive if this > other, 0 if equal.
+   * @param {Card} otherCard The card to compare against.
+   * @returns {number} Negative if this card is lower, positive if it is higher, or 0 if equal.
+   * @throws {TypeError} If the argument is not a Card instance.
    */
   compareTo(otherCard) {
     if (!(otherCard instanceof Card)) {
